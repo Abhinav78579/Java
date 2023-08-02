@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+	 System.out.println(Integer.toBinaryString(n));
+		//  int bn=0;
+		//   int rem,pv=1;
+		//   while(n!=0){
+		//   	rem=n%2;
+		//   	bn=bn+rem*pv;
+		//   	pv*=10;
+		//   	n/=2;
+		//   }
+		//   long bn1=(long)bn;
+
+		//   System.out.print(bn1);
+
+	}
+}

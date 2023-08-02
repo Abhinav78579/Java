@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Solution {
+	public static void main(String[] args) {
+		//Your code goes here
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int i=1;
+	//char sch=(char)('A'+n-1);
+		while(i<=n){
+			int j=1;
+	   char sch=(char)('A'+n-i);
+
+					
+		while(j<=i){
+			System.out.print(sch);
+				sch=(char)(sch+1);
+			j++;
+		}
+	//	sch=(char)(sch-1);
+		System.out.println();
+		i++;
+		}
+	}
+}

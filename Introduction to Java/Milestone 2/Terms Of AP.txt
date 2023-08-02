@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner s=new Scanner(System.in);
+		int x=s.nextInt();
+		int ap,c=1;
+		int i=1;
+		while(c<=x){
+			ap=3*i+2;
+			if(ap%4!=0){
+			System.out.print(ap+" ");
+			c++;
+			}
+			i++;
+		}
+	}
+}

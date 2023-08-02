@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+
+		Scanner sc=new Scanner(System.in);
+		int s,w,e;
+		s=sc.nextInt();//start value
+		e=sc.nextInt();//end value
+		w=sc.nextInt();//step size
+		int degree=0,i;
+		for( i=s;i<=e;i=i+w)
+		{
+                degree=((5)*(i-32))/9;
+                System.out.println(i+" "+degree);
+		}
+		}
+	}

@@ -1,0 +1,24 @@
+
+public class Solution {
+
+	public static boolean isPalindrome(String str) {
+		//Your code goes here
+		 String reverseString="";
+		 for(int i=0;i<str.length();i++){
+		 	reverseString = str.charAt(i) + reverseString;
+		 }
+		 if(reverseString.equals(str))
+		 return true;
+		 else
+		 return false;
+//  boolean isPalindrome = true;
+//         for (int i = 0; i < (str.length() / 2) + 1; i++) {
+//             if (str.charAt(i) != str.charAt(str.length() - i-1)) {
+//                 isPalindrome = false;
+//                 break;
+//             }
+//         }
+//         return isPalindrome;
+	}
+
+}

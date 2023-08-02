@@ -1,0 +1,28 @@
+
+public class Solution {
+
+    public static void sort012(int[] arr){
+    	//Your code goes here
+        
+        int nextZero = 0,nextOne=0;
+        int nextTwo = arr.length - 1;
+
+        while (nextZero <= nextTwo) {
+            if (arr[nextZero] == 0) {
+                int temp = arr[nextZero];
+                arr[nextZero] = arr[nextOne];
+                arr[nextOne] = temp;
+                nextZero++;
+                nextOne++;
+            } else if (arr[nextZero] == 1) {
+                nextZero++;
+            } else {
+                int temp = arr[nextZero];
+                arr[nextZero] = arr[nextTwo];
+                arr[nextTwo] = temp;
+                nextTwo--;
+            }
+            }
+    }
+
+}

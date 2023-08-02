@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+Scanner s=new Scanner(System.in);
+int basic=s.nextInt();
+String str=s.next();
+char grade=str.charAt(0);
+double hra=0.0,da=0.0,pf=0.0;
+int allow=0;
+if(grade>='A'&&grade<='Z'){
+	if(grade=='A')
+	allow=1700;
+	else if(grade=='B')
+	allow=1500;
+	else 
+	allow=1300;
+}
+hra=0.2*basic;
+da=0.5*basic;
+pf=0.11*basic;
+int totalSalary=0;
+totalSalary=(int)(basic+hra+da+allow-pf+0.5);
+
+System.out.println(totalSalary);
+	}
+}

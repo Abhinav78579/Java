@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int Sum_of_Even_Digits=0;
+		int Sum_of_Odd_Digits=0;
+		int rem , m=n;
+		while(m!=0){
+			rem=m%10;
+			m/=10;
+			if(rem%2==0) {
+			Sum_of_Even_Digits=Sum_of_Even_Digits+rem;
+			}else {
+			Sum_of_Odd_Digits=Sum_of_Odd_Digits+rem;
+			}
+		}
+		System.out.println(Sum_of_Even_Digits);
+		System.out.println(Sum_of_Odd_Digits)
+		
+	}
+}
